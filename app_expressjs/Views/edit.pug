@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Editar Cliente
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css")
+  body
+    .container.mt-5
+      h1.text-center.mb-4 Editar Cliente
+
+      form(action=`/clientes/${cliente.id}` method="POST")
+        .form-group
+          label(for="nome") Nome:
+          input.form-control(type="text" id="nome" name="nome" value=cliente.nome required)
+        .form-group.mt-3
+          label(for="email") Email:
+          input.form-control(type="email" id="email" name="email" value=cliente.email required)
+        button.btn.btn-primary.mt-3(type="submit") Atualizar
+        a.btn.btn-secondary.mt-3(href="/clientes") Voltar

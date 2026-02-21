@@ -1,0 +1,13 @@
+# Dependências
+node_modules/
+dist/
+
+# Arquivos de configuração sensíveis
+.env
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
